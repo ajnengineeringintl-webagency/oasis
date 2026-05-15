@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="favicon.ico">
+    
+    <style>
+        /* Minimal CSS Reset */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: system-ui, sans-serif; background: #fafbfc; color: #222; min-height: 100vh; line-height: 1.6; }
+    </style>
+    <link rel="stylesheet" href="app.css">
+    <script  src="js/jscpt.js"></script>
+    
+</head>
+<body>
+  <nav>
+    <img src="{{ url_for('static', filename='assets/app.png')}}" class="appl">
+    <ul>
+      <li><a href="{{url_for('pages.indexpage')}}">Home</a></li>
+      <li><a href="{{url_for('pages.aboutpage')}}">About</a></li>
+      <li><a href="{{url_for('pages.projectspage')}}">Services</a></li>
+      <li><a href="{{url_for('pages.projectspage')}}">Products</a></li>
+      <li><a href="{{url_for('blog.blogpage')}}">Blog</a></li>
+    </ul>
+    <button class="tn" href="{{url_for('pages.contactpage')}}">Contact Us</button>
+  </nav>
+
+<h1>Index</h1>
+<section id="hero">
+  <div class="c flx ce">
+      <div class="heroright">
+        <h4>QUALITY. ONLY THE BEST FOR YOUR BUSINESS!</h4>
+        <div class="ctabox">
+          <button class="ctaboxb" href="/Contact">REACH OUT TO US</button>
+          <button class="ctaboxb" href="/Contact">REQUEST QUOTE</button>
+        
+        </div>
+        <h1>THE HOME OF KINGS!</h1>
+        <h1>ROYALTY GRADE FOR YOUR BUSINESS</h1>
+        <p>When you work with Kings, You get a taste of Royalty with the satisfaction of Quality. We have what your business needs. Welcome to The Oasis of Kings!</p>
+      </div>
+      <div class="heroleft">
+          
+      
+      </div>
+  </div>
+
+</section>
+<section id="Services">
+    <div class="c flx ce">
+        <div class="services">
+            <div class="servicecard c flc">
+                <img class="servicecar"src="webdev.png">
+                <h1>Website Development</h1>
+                <p>We build fullstack business websites and web apps.</p>
+                <a href="/Contact" >Learn more</a>
+            
+            </div>
+              <div class="servicecard c flc">
+                <img class="servicecar"src="webdev.png">
+                <h1>Construction</h1>
+                <p>We do modern and high quality construction projects of buildings and supply construction materials such as sand, blocks, gravel, crushed stones, paint, and tools.</p>
+                <a href="/Contact" >Learn more</a>
+            
+            </div>
+              <div class="servicecard c flc">
+                <img class="servicecar"src="webdev.png">
+                <h1>Website Development</h1>
+                <p>We build fullstack business websites and web apps.</p>
+                <a href="/Contact" >Learn more</a>
+            
+            </div>
+              <div class="servicecard c flc">
+                <img class="servicecar"src="webdev.png">
+                <h1>Website Development</h1>
+                <p>We build fullstack business websites and web apps.</p>
+                <a href="/Contact" >Learn more</a>
+            
+            </div>
+        
+        </div>
+    
+    </div>
+
+</section>
+  
+</body>
+</html>

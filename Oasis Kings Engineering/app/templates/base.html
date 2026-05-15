@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="favicon.ico">
+    {% block title %} Oasis Kings {% endblock %}
+    <style>
+        /* Minimal CSS Reset */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: system-ui, sans-serif; background: #fafbfc; color: #222; min-height: 100vh; line-height: 1.6; }
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css')}}">
+    <script  src="{{ url_for('static', filename='js/jscpt.js')}}"></script>
+    
+</head>
+<body>
+  <nav>
+    <img src="{{ url_for('static', filename='assets/app.png')}}" class="appl">
+    <ul>
+      <li><a href="{{url_for('pages.indexpage')}}">Home</a></li>
+      <li><a href="{{url_for('pages.aboutpage')}}">About</a></li>
+      <li><a href="{{url_for('pages.projectspage')}}">Services</a></li>
+      <li><a href="{{url_for('pages.projectspage')}}">Products</a></li>
+      <li><a href="{{url_for('blog.blogpage')}}">Blog</a></li>
+    </ul>
+    <button class="tn" href="{{url_for('pages.contactpage')}}">Contact Us</button>
+  </nav>
+          {% block content %} {%endblock %}
+</body>
+</html>
